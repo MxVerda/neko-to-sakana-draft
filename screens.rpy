@@ -756,7 +756,6 @@ screen preferences():
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
 
-# TODO : ADDED FROM TUTORIAL GAME HERE TO TRY TRANSLATING WHAT EVEN HELP
     
             null height (4 * gui.pref_spacing)
 
@@ -1132,7 +1131,19 @@ style help_label_text:
     xalign 1.0
     textalign 1.0
 
+# To make the furigana in Ruby appear small and over kanji.
 
+style ruby_style is default:
+    size 20
+    yoffset -35 
+
+style say_dialogue:
+    line_leading 12
+    ruby_style style.ruby_style
+
+style history_text:
+    line_leading 12
+    ruby_style style.ruby_style
 
 ################################################################################
 ## Additional screens
